@@ -12,10 +12,10 @@ from datetime import datetime
 import time
 
 file = "C:/Users/ervin/UXW-IHEC/AudioFiles/SEQP Test Signal_v5_Science-payload.wav"
-messageCWstart = "C:/Users/ervin/UXW-IHEC/AudioFiles/startCW.wav"
-messageCWend = "C:/Users/ervin/UXW-IHEC/AudioFiles/endCW.wav"
+messageCWstart = "C:/Users/ervin/UXW-IHEC/AudioFiles/shortStart.wav"
+messageCWend = "C:/Users/ervin/UXW-IHEC/AudioFiles/shortEnd.wav"
 
-def mark1():
+def mark1TX():
     timeList = [0, 15, 30, 45]
     while 0 == 0:
         myobj = datetime.now()
@@ -23,12 +23,13 @@ def mark1():
             myobj = datetime.now()
             time.sleep(1)
             print(myobj)
-        winsound.PlaySound(messageCWstart, winsound.SND_FILENAME)
-        winsound.PlaySound(file, winsound.SND_FILENAME)
-        winsound.PlaySound(messageCWend, winsound.SND_FILENAME)
+        winsound.PlaySound(messageCWstart, winsound.SND_FILENAME) #0:19
+        winsound.PlaySound(file, winsound.SND_FILENAME) #0:18
+        winsound.PlaySound(messageCWend, winsound.SND_FILENAME) #0:19
+        # Total duration is 56 seconds.
 
 myobj = datetime.now()
 while myobj.second != 0:
     myobj = datetime.now()
     #print(myobj.second)
-mark1()
+mark1TX()
