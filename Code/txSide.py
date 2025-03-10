@@ -26,3 +26,9 @@ def mark1():
         winsound.PlaySound(messageCWstart, winsound.SND_FILENAME)
         winsound.PlaySound(file, winsound.SND_FILENAME)
         winsound.PlaySound(messageCWend, winsound.SND_FILENAME)
+
+myobj = datetime.now()
+while myobj.second != 0:
+    myobj = datetime.now()
+    #print(myobj.second)
+mark1()
