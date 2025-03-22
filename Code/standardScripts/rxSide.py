@@ -1,4 +1,4 @@
-#KI5UXW's Ionospheric Height Experiment Contribution
+#KI5UXW's Ionospheric Height Experiment Contribution (UXW-IHEC)
 # Receive Side.
 
 # If on Windows, make sure that automatic time sync is on. 
@@ -12,6 +12,8 @@ import sounddevice as sd
 from scipy.io.wavfile import write
 
 def mark1RX():
+    print("KI5UXW's Ionospheric Height Experiment Contribution.")
+    print('RX Program Start')
     timeList = [0, 15, 30, 45]
     while 0 == 0:
         myobj = datetime.now()

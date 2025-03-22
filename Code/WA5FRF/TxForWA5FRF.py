@@ -16,6 +16,9 @@ messageCWstart = "C:/Users/ervin/UXW-IHEC/AudioFiles/shortStart.wav"
 messageCWend = "C:/Users/ervin/UXW-IHEC/AudioFiles/shortEnd.wav"
 
 def mark1TX():
+    print("KI5UXW's Ionospheric Height Experiment Contribution.")
+    print("WA5FRF Version: Uses [PLACEHOLDER]")
+    print('TX Program Start')
     timeList = [0, 15, 30, 45]
     while 0 == 0:
         myobj = datetime.now()
