@@ -23,7 +23,7 @@ def mark1RX():
             time.sleep(1)
             print(myobj)
         fs = 44100  # Sample rate
-        seconds = 58  # Duration of recording
+        seconds = 60  # Duration of recording
         myrecording = sd.rec(int(seconds * fs), samplerate=fs, channels=2)
         sd.wait()  # Wait until recording is finished
         write(f"{strftime("%Y-%m-%d %H:%M:%S", gmtime())}.wav", fs, myrecording)  # Save as WAV file 

@@ -30,14 +30,16 @@ def mark1TX():
         data, fs = sf.read(cwPre, dtype='float32')  
         sd.play(data, fs)
         status = sd.wait()
+        time.sleep(0.5)
         data, fs = sf.read(payloadTrack, dtype='float32')  
         sd.play(data, fs)
         status = sd.wait()
         data, fs = sf.read(cwPost, dtype='float32')  
         sd.play(data, fs)
+        time.sleep(0.5)
         status = sd.wait()  # Wait until file is done playing
         time.sleep(5)
-        # Total duration is 56 seconds.
+        # Total duration is 57 seconds.
 
 myobj = datetime.now()
 print('Running sync with computer clock...')
