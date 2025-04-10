@@ -36,6 +36,7 @@ def mark1TX():
         data, fs = sf.read(cwPost, dtype='float32')  
         sd.play(data, fs)
         status = sd.wait()  # Wait until file is done playing
+        time.sleep(5)
         # Total duration is 56 seconds.
 
 myobj = datetime.now()
