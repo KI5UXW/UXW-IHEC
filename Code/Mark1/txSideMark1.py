@@ -17,8 +17,9 @@ messageCWend = "C:/Users/ervin/UXW-IHEC/AudioFiles/shortEnd.wav"
 
 def mark1TX():
     print("KI5UXW's Ionospheric Height Experiment Contribution.")
-    print('TX Program Start')
+    print('Transmit Program Start.')
     timeList = [0, 15, 30, 45]
+    print(f"Will transmit every {timeList} of the hour.")
     while 0 == 0:
         myobj = datetime.now()
         while myobj.minute not in timeList:
