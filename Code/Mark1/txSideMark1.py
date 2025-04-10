@@ -43,6 +43,8 @@ def mark1TX():
 
 myobj = datetime.now()
 print('Running sync with computer clock...')
+print("If your computer's time hasn't been synced, please terminate this script and go do that.")
+print('Windows guide here: Handy guide here: https://www.elevenforum.com/t/windows-time-is-not-syncing-automatically.17871/')
 while myobj.second != 0:
     myobj = datetime.now()
     #print(myobj.second)
